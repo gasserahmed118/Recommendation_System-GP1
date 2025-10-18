@@ -1,58 +1,110 @@
-# Recommendation_System-GP-
-The user enters more than input, and the system will get the file that contains data from the drive and classify it to get the number of positive, negative, and neutral samples for each file. A pie chart represents the percentage of the three classes for each input and recommends the file name that has a high ratio between the number of positive and negative samples.
-# What did I do?
-1: Collect a dataset with Egyptian language from multiple resources, such as:
+# Arabic Sentiment Analysis & Recommendation System
+
+## 📋 Overview
+
+An intelligent recommendation system that analyzes Arabic text sentiment to recommend the most positively-reviewed items. The system processes multiple input files, classifies sentiment (positive, negative, neutral), and recommends files with the highest positive-to-negative ratio.
+
+## ✨ Key Features
+
+- *Multi-source Arabic text analysis* from Google Maps, Twitter, and Google Play reviews
+- *Advanced sentiment classification* using ML and Deep Learning models
+- *Real-time Twitter scraping* for current sentiment analysis
+- *Visual analytics* with pie charts showing sentiment distribution
+- *Smart recommendations* based on positive/negative ratio analysis
+- *Web interface* built with Streamlit for easy interaction
+
+## 🏗️ Architecture
+
+### Data Collection
+The system aggregates Arabic text data from multiple sources:
+- *Google Maps* - Location and business reviews
+- *Twitter* - Real-time tweets via Twitter API
+- *Google Play* - App reviews and ratings
+
+### Data Processing Pipeline
+
+#### 1. Preprocessing
+- Text cleaning and normalization
+- Arabic-specific tokenization
+- Stop word removal
+- Feature extraction
+
+#### 2. Machine Learning Models
+- *Support Vector Machine (SVM)*
+- *K-Nearest Neighbors (KNN)*
+- *Naive Bayes*
+- *Decision Tree*
+- *Random Forest*
+- *Logistic Regression*
+
+#### 3. Deep Learning Models
+- *Feedforward Neural Network*
+- *Convolutional Neural Network (CNN)*
+
+#### 4. Sequential Models
+- *Recurrent Neural Network (RNN)*
+- *Gated Recurrent Unit (GRU)*
+- *Long Short-Term Memory (LSTM)*
+
+#### 5. Transfer Learning
+- *CAML* - Pre-trained transformer model specialized for Arabic sentiment analysis
+
+## 🚀 Getting Started
 
 
-    1.1 Google Maps
-   
-    1.2 Twitter
-   
-    1.3 Google Play
+## 📊 How It Works
+
+1. *Input Processing*: Users can either upload files containing Arabic text or enter search terms for real-time Twitter analysis
+
+2. *Sentiment Classification*: The system applies multiple ML/DL models to classify text into:
+   - ✅ Positive
+   - ❌ Negative  
+   - ➖ Neutral
+
+3. *Visualization*: Results are displayed as pie charts showing the percentage distribution of sentiments for each input
+
+4. *Recommendation Engine*: The system calculates the positive/negative ratio for each file and recommends items with the highest ratios
+
+## 🛠️ Technology Stack
+
+- *Backend*: Python
+- *ML/DL Frameworks*: TensorFlow/PyTorch, Scikit-learn
+- *Web Framework*: Streamlit
+- *Data Processing*: Pandas, NumPy
+- *Visualization*: Matplotlib, Plotly
+- *NLP*: Transformers, NLTK
+- *API Integration*: Tweepy (Twitter API)
+
+## 📁 Project Structure
 
 
-2: Apply preprocessing.
+Recommendation_System-GP-/
+├── data/
+│   ├── raw/           # Original datasets
+│   ├── processed/     # Preprocessed data
+│   └── models/        # Trained models
+├── src/
+│   ├── preprocessing/ # Data preprocessing scripts
+│   ├── models/        # ML/DL model implementations
+│   ├── scraping/      # Twitter scraping module
+│   └── utils/         # Utility functions
+├── app.py             # Streamlit application
+├── requirements.txt   # Project dependencies
+├── config.yaml        # Configuration file
+└── README.md         # Project documentation
 
 
-3: Apply machine learning models such as:
-
-    3.1 SVM
-   
-    3.2 KNN
-   
-    3.3 Naive Bayes
-   
-    3.4 Decision Tree
-   
-    3.5 Random Forest
-   
-    3.7 Logistic Regression
 
 
-4: Apply deep learning models such as:
-   
-    4.1 Forward Neural Network
-   
-    4.2 CNN
+## 👥 Team
+
+- Abdelrhman Mohamed - [GitHub](https://github.com/AbdelrhmanMohamed2001)
+- Mohamed wahed mohamed -[Github](https://github.com/MuhammedWaheed)
+## 🙏 Acknowledgments
+
+- CAML model developers for the pre-trained Arabic sentiment analysis model
+- Arabic NLP community for datasets and resources
+- [Add other acknowledgments]
 
 
-5: Apply Sequential models such as:
-
-   
-    5.1 RNN
-   
-    5.2 GRU
-   
-    5.3 LSTM
-
-# Transfer Learning:
-Used Transformers as a pre-trained model called "CAML based on Arabic sentiment analysis."
-
-# Scraping:
-Scrap tweets from Twitter about any input user entered by the Twitter API.
-
-# GUI:
-Stramlit library in Python instead of web development, as we wanted to make a website.
-
-# How to Use:
-https://github.com/AbdelrhmanMohamed2001/Recommendation_System-GP-/blob/main/How%20to%20use%20out%20system.mp4
+⭐ Star this repository if you find it helpful!
